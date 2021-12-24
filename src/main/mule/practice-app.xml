@@ -6,7 +6,7 @@
 http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
 	
 	<flow name="world-time-demo" doc:id="b82dfd16-fd42-4fdc-8f85-b30efa6f22ed" >
-		<http:listener doc:name="Listener" doc:id="92298c4c-ab9e-4db4-a87e-8c6e61a21c31" config-ref="HTTP_Listener_config" path="/timezone"/>
+		<http:listener doc:name="Get /timezone" doc:id="92298c4c-ab9e-4db4-a87e-8c6e61a21c31" config-ref="HTTP_Listener_config" path="/timezone"/>
 		<http:request method="GET" doc:name="Request" doc:id="8e8eac23-9a0e-4b9d-a37e-1527bb6fbba2" config-ref="HTTP_Request_configuration" path="/{regionName}/{cityName}">
 			<http:uri-params ><![CDATA[#[output application/java
 ---
