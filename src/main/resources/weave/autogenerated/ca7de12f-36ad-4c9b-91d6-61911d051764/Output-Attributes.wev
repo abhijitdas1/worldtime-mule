@@ -1,0 +1,9 @@
+%dw 2.0
+
+type auto_ca7de12f_36ad_4c9b_91d6_61911d051764_Output_Attributes = {|
+  queryParams: {|
+    region: String, 
+    city: String
+  |}
+|}
+
