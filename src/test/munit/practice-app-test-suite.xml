@@ -14,7 +14,7 @@
 			<flow-ref doc:name="Flow-ref to world-timezone" doc:id="e9d2473f-4a90-4f5b-a8dd-7a3193ce7832" name="world-time-demo"/>
 		</munit:execution>
 		<munit:validation >
-			<munit-tools:assert-that doc:name="Assert that" doc:id="a43afc42-3939-47a8-b487-f9e159f4c4a8" is="#[MunitTools::notNullValue()]" expression="#[payload]" message='"Payload is null"'/>
+			<munit-tools:assert-that doc:name="Assert that" doc:id="a43afc42-3939-47a8-b487-f9e159f4c4a8" is="#[MunitTools::notNullValue()]" expression="#[payload]" message='"Payload is null !!"'/>
 		</munit:validation>
 	</munit:test>
 	<munit:test name="payload-json" doc:id="da0446c0-15f1-43fb-b2b6-9d4b21c41b96" description="Test">
