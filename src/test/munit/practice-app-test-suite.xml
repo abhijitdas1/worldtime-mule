@@ -8,7 +8,7 @@
 		http://www.mulesoft.org/schema/mule/munit http://www.mulesoft.org/schema/mule/munit/current/mule-munit.xsd
 		http://www.mulesoft.org/schema/mule/munit-tools  http://www.mulesoft.org/schema/mule/munit-tools/current/mule-munit-tools.xsd">
 	<munit:config name="practice-app-test-suite.xml" />
-	<munit:test name="payload-notnull" doc:id="2fdc5d89-5726-495b-ae9a-2fa9d2e5a494" description="Test">
+	<munit:test name="payload-notnull" doc:id="2fdc5d89-5726-495b-ae9a-2fa9d2e5a494" description="Test" ignore="true">
 		<munit:execution >
 			<flow-ref doc:name="Flow Reference" doc:id="d2245f52-e9a2-4b4b-b1f0-47a12ce8aa86" name="subFlow" />
 			<flow-ref doc:name="Flow-ref to world-timezone" doc:id="e9d2473f-4a90-4f5b-a8dd-7a3193ce7832" name="world-time-demo"/>
@@ -17,7 +17,7 @@
 			<munit-tools:assert-that doc:name="Assert that" doc:id="a43afc42-3939-47a8-b487-f9e159f4c4a8" is="#[MunitTools::notNullValue()]" expression="#[payload]" message='"Payload is null !!"'/>
 		</munit:validation>
 	</munit:test>
-	<munit:test name="payload-json" doc:id="da0446c0-15f1-43fb-b2b6-9d4b21c41b96" description="Test">
+	<munit:test name="payload-json" doc:id="da0446c0-15f1-43fb-b2b6-9d4b21c41b96" description="Test" ignore="true">
 		<munit:execution >
 			<flow-ref doc:name="Flow Reference" doc:id="a7658953-416a-4af2-a181-6b4308d54a67" name="subFlow"/>
 			<flow-ref doc:name="Flow-ref to munit-test-wit-timezone-api" doc:id="e671a306-aa50-40c0-a2ac-4c08d14f5ffa" name="world-time-demo"/>
@@ -26,7 +26,7 @@
 			<munit-tools:assert-that doc:name="Assert that" doc:id="64758453-5ec9-43a5-b99a-0434f06d4697" expression="#[payload]" is="#[MunitTools::withMediaType('application/json')]" message="MediaType is incorrect"/>
 		</munit:validation>
 	</munit:test>
-	<munit:test name="dst-off" doc:id="e72d19ec-a947-44e6-b826-e445dd0b292f" description="Test">
+	<munit:test name="dst-off" doc:id="e72d19ec-a947-44e6-b826-e445dd0b292f" description="Test" ignore="true">
 		<munit:execution >
 			<flow-ref doc:name="Flow Reference" doc:id="f7bfaf02-eb59-43b9-875b-8679ea7e2c04" name="subFlow"/>
 			<flow-ref doc:name="Flow-ref to munit-test-wit-timezone-api" doc:id="14e20b91-8633-48f1-a5d6-b623cc98a592" name="world-time-demo"/>
