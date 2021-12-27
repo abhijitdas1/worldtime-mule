@@ -34,9 +34,9 @@
 					<cloudHubDeployment>
 						<username>abhijitdas1</username>
 						<password>Apisero@1234</password>
-						<uri>https://anypoint.mulesoft.com</uri>
 						<environment>Sandbox</environment>
-						<applicationName>practice-app</applicationName>						
+						<objectStoreV2>true</objectStoreV2>
+						<applicationName>practice-app-3322021</applicationName>						
 						<muleVersion>4.4.0</muleVersion>
 						<workers>1</workers>
 						<workerType>Micro</workerType>
