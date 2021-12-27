@@ -34,8 +34,9 @@
 					<cloudHubDeployment>
 						<username>abhijitdas1</username>
 						<password>Apisero@1234</password>
+						<uri>https://anypoint.mulesoft.com</uri>
 						<environment>Sandbox</environment>
-						<applicationName>world-timezone</applicationName>						
+						<applicationName>practice-app</applicationName>						
 						<muleVersion>4.4.0</muleVersion>
 						<workers>1</workers>
 						<workerType>Micro</workerType>
