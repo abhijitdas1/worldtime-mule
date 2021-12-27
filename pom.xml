@@ -30,6 +30,17 @@
 				<artifactId>mule-maven-plugin</artifactId>
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
+				<configuration>
+					<cloudHubDeployment>
+						<username>abhijitdas1</username>
+						<password>Apisero@1234</password>
+						<environment>Sandbox</environment>
+						<applicationName>world-timezone</applicationName>						
+						<muleVersion>4.4.0</muleVersion>
+						<workers>1</workers>
+						<workerType>Micro</workerType>
+					</cloudHubDeployment>
+				</configuration>
 			</plugin>
 			<plugin>
 				<groupId>com.mulesoft.munit.tools</groupId>
