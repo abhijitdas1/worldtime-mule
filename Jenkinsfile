@@ -13,7 +13,7 @@ pipeline
 		}
 		stage('Perform regression testing')
 		{
-			bat 'mvn deploy -DmuleDeploy -Dmunit.failIfNoTests=false'
+			bat 'mvn deploy -DmuleDeploy -Dmunit.failIfNoTests=false
 		}					
 	}
 }
