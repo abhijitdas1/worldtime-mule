@@ -5,15 +5,24 @@ pipeline
 	{
 		stage('Build Application')
 		{
-			bat 'mvn clean install -Dmunit.failIfNoTests=false'
+			steps
+			{
+				bat 'mvn clean install -Dmunit.failIfNoTests=false'
+			}
 		}
 		stage('Deploy Application to Cloudhub')
 		{
-			bat 'mvn deploy -DmuleDeploy -Dmunit.failIfNoTests=false'
+			steps
+			{
+				bat 'mvn deploy -DmuleDeploy -Dmunit.failIfNoTests=false'
+			}				
 		}
 		stage('Perform regression testing')
 		{
-			bat 'mvn deploy -DmuleDeploy -Dmunit.failIfNoTests=false
+			steps
+			{
+				bat 'C:\\Users\\abhijitadas\\AppData\\Roaming\\npm\\newman run C:\\Users\\abhijitadas\\world-timezone.postman_collection.json -r htmlextra --reporter-htmlextra-export C:\\Users\\abhijitadas\\ --disable-unicode'
+			}				
 		}					
 	}
 }
