@@ -10,6 +10,8 @@ pipeline
 				bat 'mvn clean install -Dmunit.failIfNoTests=false'
 			}
 		}
+		
+		
 		stage('Deploy Application to Cloudhub')
 		{
 			steps
