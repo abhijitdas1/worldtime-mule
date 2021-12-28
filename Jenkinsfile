@@ -10,8 +10,6 @@ pipeline
 				bat 'mvn clean install -Dmunit.failIfNoTests=false'
 			}
 		}
-		
-		
 		stage('Deploy Application to Cloudhub')
 		{
 			steps
@@ -24,7 +22,7 @@ pipeline
 			steps
 			{
 				bat 'C:\\Users\\abhijitadas\\AppData\\Roaming\\npm\\newman run C:\\Users\\abhijitadas\\world-timezone.postman_collection.json -r htmlextra --reporter-htmlextra-export C:\\Users\\abhijitadas\\ --disable-unicode'
-			}				
+			}
 		}					
 	}
 }
